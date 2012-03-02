@@ -14,6 +14,7 @@ def to_fixtures
   md5 = Digest::MD5.hexdigest(hash.to_s)
   string = "#{md5}:\n"
   hash.each do |key,value|
+    value.gsub!("\n","\n"+" "*4) if value.class == String
     string += "  #{key.to_s}: #{value}\n" unless value.nil?
   end
   string += "\n"
