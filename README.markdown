@@ -1,8 +1,8 @@
 How to use
 ======
 
-need add line
- **require 'fixtures/fixtures'**
+need add line  
+ **require 'fixtures/fixtures'**  
 in your environment.rb
 
 **active_record_object.to_hash**  
