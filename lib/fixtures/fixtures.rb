@@ -15,7 +15,7 @@ def to_fixtures
   string = "#{md5}:\n"
   hash.each do |key,value|
     value.gsub!("\n","\n"+" "*4) if value.class == String
-    string += "  #{key.to_s}: #{value}\n" unless value.nil?
+    string += " "*2 + "#{key.to_s}: #{value}\n" unless value.nil?
   end
   string += "\n"
   table_name = self.class.table_name
