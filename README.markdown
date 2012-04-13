@@ -7,6 +7,7 @@ How to use
 need add line  
  **require 'fixtures/fixtures'**  
 in your environment.rb
+
  **gem 'fixtures'**  
 in you Gemfile
 
